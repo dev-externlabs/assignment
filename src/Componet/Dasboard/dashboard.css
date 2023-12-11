@@ -1,0 +1,525 @@
+.graphcashbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cashbox {
+    padding: 19px 14px 33px 24px;
+    background: linear-gradient(183deg, #EAF5FF 2.45%, #FFF 97.55%);
+    border-radius: 12px;
+    width: 45%;
+    min-width: 350px;
+    margin-right: 10px;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cashbox>.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.cashbox>.title h2 {
+    color: #555454;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+
+.cashbox>.title button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: #3A6FF8;
+    padding: 9px 14px 10px;
+    line-height: 17px;
+}
+
+.cashbox>.title p {
+    font-family: 'SF Pro Display';
+    color: #8E8E8E;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+}
+
+.cashbox h3 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 34px;
+    line-height: 30px;
+}
+
+.cashbox .bottompart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cashbox .bottompart p {
+    color: #555454;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cashbox .bottompart p:first-child {
+    margin-bottom: 6px;
+}
+
+.graphbox {
+    width: 45%;
+    min-width: 350px;
+    margin-right: 0;
+    position: relative;
+}
+
+.graphbox #chart {
+    padding-right: 80px;
+}
+
+.graphbox #chart .toolbar {
+    display: none;
+}
+
+.graphselectbox {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #EEF6FF;
+}
+
+.graphselectbox select {
+    cursor: pointer;
+    color: #3A6FF8;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    appearance: none;
+    background: transparent;
+    line-height: 1;
+    padding: 7px 30px 7px 10px;
+    display: block;
+    background: url(../images/arrowdown.svg) top 9px right 5px no-repeat;
+}
+
+.receivabletitle {
+    margin: 28px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #555454;
+    margin: 0;
+}
+
+.receivabletitle .serchbox {
+    position: relative;
+    border-bottom: 1px solid #DDDFE1;
+}
+
+.receivabletitle input {
+    border: none;
+    outline: none;
+    font-family: 'SF Pro Display';
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    padding: 5px 15px 5px 0;
+    line-height: 22px;
+    width: 100%;
+    appearance: none;
+}
+
+.receivabletitle input[type="search"]::-webkit-search-decoration,
+.receivabletitle input[type="search"]::-webkit-search-cancel-button,
+.receivabletitle input[type="search"]::-webkit-search-results-button,
+.receivabletitle input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+.receivabletitle .serchbox button {
+    position: absolute;
+    cursor: pointer;
+    top: 6px;
+    right: 0px;
+    width: 15px;
+}
+
+.receivabletitle .serchbox button img {
+    width: 100%;
+}
+
+.receivabletable,
+.payabletable {
+    width: 100%;
+}
+
+.receivabletable table,
+.payabletable table {
+    width: 100%;
+    overflow: auto;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.receivabletable table tr,
+.payabletable table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 46px;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.receivabletable table th,
+.payabletable table th {
+    color: #464A53;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 5px;
+}
+
+.receivabletable table tbody,
+.payabletable table tbody {
+    overflow: auto;
+    height: 138px;
+}
+
+.receivabletable table td,
+.payabletable table td {
+    color: #6A707E;
+    padding: 0 5px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.receivabletable table tr,
+.payabletable table tr {
+    border-bottom: 1px solid #DDDFE1;
+}
+
+.receivabletable table thead tr:first-child,
+.payabletable table thead tr:first-child {
+    border: 1px solid #DDDFE1;
+    height: 46px;
+}
+
+.receivabletable table th:first-child,
+.receivabletable table td:first-child,
+.payabletable table th:first-child,
+.payabletable table td:first-child {
+    width: 100px;
+}
+
+.receivabletable table th:nth-child(2),
+.receivabletable table td:nth-child(2),
+.payabletable table th:nth-child(2),
+.payabletable table td:nth-child(2) {
+    width: 100px;
+}
+
+.receivabletable table th:nth-child(3),
+.receivabletable table td:nth-child(3),
+.payabletable table th:nth-child(3),
+.payabletable table td:nth-child(3) {
+    width: 100px;
+}
+
+.receivabletable table th:nth-child(4),
+.receivabletable table td:nth-child(4),
+.payabletable table th:nth-child(4),
+.payabletable table td:nth-child(4) {
+    width: 145px;
+}
+
+.receivabletable table th:nth-child(5),
+.receivabletable table td:nth-child(5),
+.payabletable table th:nth-child(5),
+.payabletable table td:nth-child(5) {
+    width: 100px;
+}
+
+.receivabletable table th:nth-child(6),
+.receivabletable table td:nth-child(6),
+.payabletable table th:nth-child(6),
+.payabletable table td:nth-child(6) {
+    width: 145px;
+}
+
+.receivabletable table th:last-child,
+.receivabletable table td:last-child,
+.payabletable table th:last-child,
+.payabletable table td:last-child {
+    width: 100px;
+}
+
+.payabletablesection {
+    margin: 30px 0 0;
+}
+
+.payabletablesection .heading {
+    margin-bottom: 10px;
+}
+
+
+.paginationlist .pagination {
+    text-align: right;
+    margin: 5px 0 0 0;
+}
+
+.paginationlist .pagination .page-item .page-link {
+    border: none;
+}
+
+.paginationlist .pagination .page-item .page-link {
+    color: #ABAFB3;
+    font-family: SF Pro Display;
+    font-size: 12px;
+    font-style: normal;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.paginationlist .pagination .page-item:first-child {
+    margin-right: 15px;
+}
+
+.paginationlist .pagination .page-item:last-child {
+    margin-left: 15px;
+}
+
+.paginationlist .pagination .page-item:first-child .page-link,
+.paginationlist .pagination .page-item:last-child .page-link {
+    color: #464A53;
+}
+
+.paginationlist .pagination .page-item .page-link.active,
+.paginationlist .pagination .page-item .page-link:hover {
+    border: none;
+    outline: none;
+    color: #2B7FFC;
+    background: transparent;
+}
+
+
+/************* Scrollbar css  ******************/
+
+
+
+.receivabletable::-webkit-scrollbar,
+.payabletable::-webkit-scrollbar {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 5px;
+} 
+
+.receivabletable::-webkit-scrollbar-thumb,
+.payabletable::-webkit-scrollbar-thumb {
+    background: #3A6FF8;
+    border-radius: 10px;
+    height: 5px;
+}
+
+.receivabletable table tbody::-webkit-scrollbar,
+.payabletable table tbody::-webkit-scrollbar {
+    width: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .receivabletable table tbody::-webkit-scrollbar-thumb,
+  .payabletable table tbody::-webkit-scrollbar-thumb   {
+    background: #3A6FF8; 
+    border-radius: 10px;
+  }
+
+
+/****************** Media css  ***************/
+
+@media(min-width:1300px) {
+    .cashbox>.title h2 {
+        font-size: 22px;
+    }
+
+    .cashbox>.title p {
+        font-size: 14px;
+    }
+
+    .cashbox>.title button {
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 10px;
+        background: #3A6FF8;
+        padding: 16px;
+    }
+
+    .cashbox h3 {
+        font-size: 30px;
+    }
+
+    .cashbox .bottompart p {
+        font-size: 18px;
+    }
+
+    .cashbox {
+        padding: 30px;
+    }
+
+    .cashbox .bottompart p:first-child {
+        margin-bottom: 10px;
+    }
+
+    .receivabletable table td,
+    .payabletable table td,
+    .receivabletable table th,
+    .payabletable table th {
+        font-size: 14px;
+    }
+
+}
+
+
+@media(max-width:1199px) {
+    .contentpart {
+        padding: 25px 15px 10px;
+    }
+
+    .graphbox {
+        width: 50%;
+    }
+
+    .receivabletable,
+    .payabletable {
+        overflow: auto;
+    }
+
+    .receivabletable table tr,
+    .payabletable table tr {
+        padding: 0 5px;
+    }
+
+  
+
+}
+
+
+@media(max-width: 991px) {
+
+    .cashbox {
+        min-width: auto;
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .graphbox {
+        margin-top: 25px;
+        width: 100%;
+        min-width: auto;
+    }
+
+    .graphcashbox {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .cashbox h3 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 580px) {
+
+    .cashbox {
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .receivabletitle .serchbox {
+        margin-left: 5px;
+        width: 170px;
+    }
+
+}
+
+@media(max-width: 450px) {
+
+    .cashbox>.title,
+    .cashbox .bottompart,
+    .receivabletitle {
+        flex-wrap: wrap;
+    }
+
+    .cashbox>.title .leftpart {
+        width: 100%;
+    }
+
+    .cashbox>.title .rightpart {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .cashbox>.bottompart .leftpart {
+        width: 100%;
+    }
+
+    .cashbox>.bottompart .rightpart {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .cashbox h3 {
+        margin-bottom: 22px;
+    }
+
+    .receivabletitle .serchbox {
+        width: 100%;
+        margin: 5px 0 0;
+    }
+
+}
+
+
+@media(max-width: 380px) {
+    .cashbox .bottompart p {
+        font-size: 10px;
+    }
+}

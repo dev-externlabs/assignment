@@ -1,0 +1,319 @@
+.dashboardbody {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 247px;
+    padding: 34px 0px 0px;
+    border-right: 2px solid #F6F6F6;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: auto;
+
+}
+
+.menubar {
+    margin: 40px 0;
+    padding: 0 40px 0 47px;
+}
+
+.menubar li+li {
+    margin-top: 20px;
+}
+
+.menubar li a {
+    display: block;
+    color: #8E8E8E;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+
+}
+
+.menubar li a img,
+.menubottom ul li a img {
+    margin-right: 15px;
+}
+
+.menubar li a:hover,
+.menubar li.active a {
+    background: #EAF5FF;
+    transition: all .3s linear;
+}
+
+.menubottom ul li a {
+    display: flex;
+    align-items: center;
+    color: #8E8E8E;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.menubottom {
+    margin-left: 46px;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+.menubottom ul {
+    padding-left: 13px;
+    padding-top: 30px;
+    border-top: 1px solid #F6F6F6;
+    margin-right: 30px;
+}
+
+
+.menubottom ul li+li {
+    margin-top: 27px;
+}
+
+.userdetail {
+    display: flex;
+    align-items: center;
+}
+
+.userdetail {
+    margin-top: 40px;
+    padding-right: 5px;
+    padding-left: 13px;
+}
+
+.userdetail>figure {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    margin: 0 6px 0 0;
+}
+
+.userdetail h2 {
+    color: #2B303C;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.userdetail a {
+    text-decoration: none;
+    color: #A2A5AE;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* smallmenu start css  */
+
+
+.smallmenu .sidebar {
+    width: 100px;
+}
+
+.smallmenu .sidebar .logo {
+    width: 60px;
+    margin: 0 auto;
+}
+
+.smallmenu .sidebar .logo img {
+    width: 100%;
+}
+
+.smallmenu .menubar {
+    padding: 0;
+}
+
+.smallmenu .menubar li a {
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.smallmenu .menubar li a img {
+    margin-right: 0;
+}
+
+.smallmenu .menubar li a>span,
+.smallmenu .menubottom ul li a>span {
+    display: none;
+    transition: all .3s ease;
+}
+
+.smallmenu .userinfo {
+    display: none;
+}
+
+.smallmenu .userdetail figure {
+    margin: 0;
+}
+
+.smallmenu .menubottom ul {
+    margin-right: 0;
+}
+
+.smallmenu .userdetail {
+    padding-right: 0;
+    padding-left: 6px;
+    transition: all .3s ease;
+}
+
+.smallmenu .menubottom {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.smallmenu .contentpart {
+    width: calc(100% - 100px);
+    transition: all .3s ease;
+}
+
+
+/* smallmenu end css  */
+
+
+
+.contentpart {
+    width: calc(100% - 247px);
+    padding: 40px;
+    height: 100vh;
+    overflow: auto;
+    transition: all .3s ease;
+}
+
+/************* scroll bar css ***************/
+.contentpart::-webkit-scrollbar {
+  width: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.contentpart::-webkit-scrollbar-thumb {
+  background: #3A6FF8;
+  border-radius: 10px;
+}
+
+
+/********************** Media css  **************************/
+
+
+@media(max-width:1199px) {
+    .contentpart {
+        padding: 25px 15px 10px;
+    }
+
+    .menubottom {
+        padding-bottom: 20px;
+    }
+}
+
+
+
+@media(max-width: 767px) {
+    .sidebar {
+        width: 100px;
+        padding: 25px 0px 0px;
+    }
+
+    .sidebar .logo {
+        width: 60px;
+        margin: 0 auto;
+    }
+
+    .sidebar .logo img {
+        width: 100%;
+    }
+
+    .menubar {
+        padding: 0;
+    }
+
+    .menubar li a {
+        padding: 2px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .menubar li a>span,
+    .menubottom ul li a>span {
+        display: none;
+    }
+
+    .menubar li a img {
+        margin-right: 0;
+    }
+
+    .menubottom ul {
+        margin-right: 0;
+    }
+
+    .menubar li+li {
+        margin-top: 10px;
+    }
+
+
+    .userdetail {
+        padding-right: 0;
+    }
+
+    .userdetail figure {
+        margin: 0;
+    }
+
+    .userinfo {
+        display: none;
+    }
+
+    .menubottom {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menubar {
+        margin: 20px 0;
+    }
+
+
+    .userdetail ,
+    .smallmenu .userdetail {
+        padding-left: 0;
+    }
+
+    .contentpart {
+        width: calc(100% - 100px);
+    }
+
+}
